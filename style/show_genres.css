@@ -1,0 +1,3 @@
+.BookPageMetadataSection__genres ul span[tabindex='-1'] span:not(:nth-child(n + 4)) {
+    visibility: visible;
+}

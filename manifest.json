@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "guessreads",
+  "description": "Hides select Goodreads information",
+  "version": "1.0",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.goodreads.com/*"],
+      "run_at": "document_start",
+      "js": ["bundler.js"],
+      "css": ["style/censor.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["style/*.css"],
+      "matches": ["https://www.goodreads.com/*"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

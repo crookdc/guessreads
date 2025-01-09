@@ -1,0 +1,7 @@
+.minirating,
+.RatingStatistics,
+.AverageRating,
+.ReviewsSectionStatistics,
+.BookPageMetadataSection__genres {
+    visibility: hidden;
+}
